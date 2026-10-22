@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prakruthi | BCA Portfolio</title>
+  <meta name="description" content="Prakruthi is a BCA student learning web development and building user-friendly websites.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar wrap" aria-label="Main navigation">
+      <a class="logo" href="#home">Prakruthi</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-text">
+        <p class="role">BCA student and aspiring web developer</p>
+        <h1>Prakruthi</h1>
+        <p class="hero-description">I enjoy learning web development and building websites that are simple to use and pleasant to look at.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">See my projects</a>
+          <a class="button secondary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="assets/profile.jpg" alt="Portrait of Prakruthi in a green outfit, standing among palm trees" width="732" height="604">
+      </figure>
+    </section>
+
+    <section class="section wrap split" id="about">
+      <h2 class="section-title">About me</h2>
+      <div class="split-body">
+        <p class="lead">I'm a Bachelor of Computer Applications student interested in programming and website development.</p>
+        <p>I'm improving my skills through coursework and practical projects. My goal is to grow into a confident developer and keep learning new technologies along the way.</p>
+        <p class="place">Based in India</p>
+      </div>
+    </section>
+
+    <section class="band" id="skills">
+      <div class="wrap split">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skill-list">
+          <li><h3>HTML</h3><p>Building clear webpage structure.</p></li>
+          <li><h3>CSS</h3><p>Styling responsive, attractive layouts.</p></li>
+          <li><h3>JavaScript</h3><p>Adding interactive webpage features.</p></li>
+          <li><h3>Python</h3><p>Learning programming fundamentals.</p></li>
+          <li><h3>SQL and databases</h3><p>Learning how to store and retrieve data.</p></li>
+          <li><h3>Problem solving</h3><p>Practising logical thinking and debugging.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section wrap split" id="projects">
+      <h2 class="section-title">Featured projects</h2>
+      <div class="project-list">
+        <article class="project">
+          <h3>Personal portfolio website</h3>
+          <p>A responsive website presenting my profile, education, skills, projects, and contact details.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+        <article class="project">
+          <h3>Library management system</h3>
+          <p>A student project concept for organising book details, member information, and library records.</p>
+          <ul class="tags"><li>Database</li><li>System design</li></ul>
+        </article>
+        <article class="project">
+          <h3>More projects coming</h3>
+          <p>Add your completed college assignments or personal projects here with a short description.</p>
+          <ul class="tags"><li>Learning</li><li>Practice</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="band" id="education">
+      <div class="wrap split">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <p class="status">Currently studying</p>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <dl>
+            <dt>College</dt><dd>Add your college name</dd>
+            <dt>Year</dt><dd>Add your current year</dd>
+            <dt>Subjects</dt><dd>Programming, Database Management, Web Development, and Software Engineering</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap split">
+        <div>
+          <h2 class="section-title">Contact me</h2>
+          <p class="contact-intro">Have a question or want to talk about a project? Send me a message.</p>
+          <a class="button resume" href="resume.pdf" download>Download resume</a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="form-row"><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="form-row"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+          <button class="button primary" type="submit">Open email draft</button>
+          <p class="form-note" id="formNote">This opens your email app. Messages are not sent or stored on a server.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Prakruthi</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
